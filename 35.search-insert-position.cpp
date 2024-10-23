@@ -32,4 +32,8 @@ public:
     }
 };
 // @lc code=end
-
+//需要注意，在循环结束之后，begin值可能并不等于mid值
+//循环退出时，begin可以指向最后两个数之中的任意一个
+//如(target,any)此时指向第一个
+//(any,target) 此时指向第二个
+//如果target在两数之间，那么begin指向第二个（但此时mid指向第一个）
